@@ -1,0 +1,21 @@
+name: winche_functions
+description: Dart client for Winche functions — call callable functions on a Winche server as the signed-in user.
+version: 0.1.0
+repository: https://github.com/FlameOfUdun/winche-functions-dart-sdk
+issue_tracker: https://github.com/FlameOfUdun/winche-functions-dart-sdk/issues
+
+topics:
+  - serverless
+  - functions
+  - backend
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  winche_core: ^1.0.0
+
+dev_dependencies:
+  http: ^1.2.0
+  lints: ^6.0.0
+  test: ^1.26.2
