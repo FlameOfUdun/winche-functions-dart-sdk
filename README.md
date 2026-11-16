@@ -32,6 +32,23 @@ function's own default timeout. Set it to change that.
 Locally, `WincheOptions.emulator()` includes the emulator's functions (`winche emulators start` with a functions folder
 from `winche functions init`).
 
+## Installation
+
+```bash
+dart pub add winche_core winche_functions
+```
+
+Or add them to `pubspec.yaml`:
+
+```yaml
+dependencies:
+  winche_core: ^1.0.0
+  winche_functions: ^0.1.0
+```
+
+`winche_core` is not optional. It owns the app, the endpoints and the session every Winche package binds to, so an
+app always imports it directly.
+
 ## Writing functions
 
 On the server, with `@winche/functions`:
