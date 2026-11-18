@@ -51,10 +51,10 @@ app always imports it directly.
 
 ## Writing functions
 
-On the server, with `@winche/functions`:
+On the server, with `@winche-technologies/winche-functions`:
 
 ```ts
-import { callable, HttpsError } from "@winche/functions";
+import { callable, HttpsError } from "@winche-technologies/winche-functions";
 
 export const hello = callable(async (data: { name?: string }, ctx) => {
   if (!data?.name) throw new HttpsError("invalid-argument", "Send a name.");
